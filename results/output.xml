@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.8.0 on win32)" generated="2024-04-18T18:18:30.011184" rpa="false" schemaversion="5">
+<suite id="s1" name="123" source="C:\Users\NguyenLong\Desktop\123">
+<suite id="s1-s1" name="Place" source="C:\Users\NguyenLong\Desktop\123\Place">
+<suite id="s1-s1-s1" name="Access Point Management" source="C:\Users\NguyenLong\Desktop\123\Place\Access Point Management">
+<suite id="s1-s1-s1-s1" name="Services" source="C:\Users\NguyenLong\Desktop\123\Place\Access Point Management\services.robot">
+<test id="s1-s1-s1-s1-t1" name="DynamicLinkToDetail1" line="7">
+<kw name="DynamicLinkToDetail">
+<kw name="Click on your domain" owner="Domain">
+<kw name="Login With True Password" owner="Login">
+<kw name="Open" owner="keyworld">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:30.135078" level="INFO">Opening browser 'chrome' to base url 'https://id.awifi.vn/login?clientId=200&amp;returnUrl=https://acm.awifi.vn/'.</msg>
+<arg>${URL}</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-04-18T18:18:30.135078" elapsed="2.584539"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:30.135078" elapsed="2.584539"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-04-18T18:18:32.719617" elapsed="0.113610"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>0.2</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-04-18T18:18:32.833227" elapsed="0.000999"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:33.049421" level="INFO">Page title is 'DASHBOARD | AWING ID SYSTEM'.</msg>
+<arg>DASHBOARD | AWING ID SYSTEM</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-18T18:18:32.834226" elapsed="0.216202"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:33.052426" level="INFO">Typing text 'admin' into text field '//input[@name="username"]'.</msg>
+<arg>//input[@name="username"]</arg>
+<arg>admin</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:33.051425" elapsed="0.694700"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:33.748351" level="INFO">Clicking element '//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-19f3993"]'.</msg>
+<arg>//button[@class="MuiButtonBase-root MuiIconButton-root MuiIconButton-edgeEnd MuiIconButton-sizeMedium css-19f3993"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:33.747075" elapsed="0.461844"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:34.211929" level="INFO">Typing text 'Awing@123' into text field '//input[@name="password"]'.</msg>
+<arg>//input[@name="password"]</arg>
+<arg>Awing@123</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:34.210930" elapsed="0.731375"/>
+</kw>
+<kw name="But" owner="keyworld">
+<kw name="Click Button" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:34.948115" level="INFO">Clicking button 'xpath=//*[@id=":r2:"]'.</msg>
+<arg>locator=${Locator_but}</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:34.946312" elapsed="1.127607"/>
+</kw>
+<arg>xpath=//*[@id=":r2:"]</arg>
+<status status="PASS" start="2024-04-18T18:18:34.944321" elapsed="1.129598"/>
+</kw>
+<kw name="Sleeping" owner="keyworld">
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-04-18T18:18:39.079848" level="INFO">Slept 3 seconds.</msg>
+<arg>${time_sleep}</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-04-18T18:18:36.074921" elapsed="3.004927"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:36.074921" elapsed="3.004927"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:30.134037" elapsed="8.945811"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${LOGO}</arg>
+<arg>timeout=5s</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T18:18:39.080852" elapsed="0.867134"/>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:40.164462" level="INFO">Page title is 'DASHBOARD | ADAPTIVE CAMPAIGN MANAGEMENT'.</msg>
+<arg>DASHBOARD | ADAPTIVE CAMPAIGN MANAGEMENT</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="PASS" start="2024-04-18T18:18:39.948242" elapsed="0.217227"/>
+</kw>
+<kw name="DynamicLink" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:40.170573" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/header/div/div[2]'.</msg>
+<arg>locator=${dinamic}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:40.169072" elapsed="0.474588"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${WebElement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T18:18:40.644661" elapsed="0.445215"/>
+</kw>
+<arg>xpath=//*[@id="root"]/div/header/div/div[2]</arg>
+<arg>xpath=//*[@id="popover-domain"]/div[3]/div[1]</arg>
+<status status="PASS" start="2024-04-18T18:18:40.166990" elapsed="0.922886"/>
+</kw>
+<kw name="DynamicLink" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:41.091878" level="INFO">Clicking element 'xpath=//*[@id="popover-domain"]/div[3]/div[3]/button'.</msg>
+<arg>locator=${dinamic}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:41.090878" elapsed="0.491331"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${WebElement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T18:18:41.582209" elapsed="0.863157"/>
+</kw>
+<arg>xpath=//*[@id="popover-domain"]/div[3]/div[3]/button</arg>
+<arg>xpath=/html/body/div[2]/div[3]/div[2]/div/div[1]/div/div</arg>
+<status status="PASS" start="2024-04-18T18:18:41.089876" elapsed="1.355490"/>
+</kw>
+<kw name="Ele" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:42.447892" level="INFO">Clicking element 'xpath=(//div[@class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy"])[3]'.</msg>
+<arg>locator=${ele}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:42.447892" elapsed="0.448251"/>
+</kw>
+<arg>xpath=(//div[@class="MuiToolbar-root MuiToolbar-gutters MuiToolbar-regular css-i6s8oy"])[3]</arg>
+<status status="PASS" start="2024-04-18T18:18:42.446375" elapsed="0.450699"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:42.900233" level="INFO">Typing text 'LTS lang ha' into text field '//input[@class="MuiInputBase-input css-mnn31"]'.</msg>
+<arg>//input[@class="MuiInputBase-input css-mnn31"]</arg>
+<arg>LTS lang ha</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:42.898286" elapsed="0.727716"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:43.628605" level="INFO">Sending key(s) ('ENTER',) to //input[@class="MuiInputBase-input css-mnn31"] element.</msg>
+<msg time="2024-04-18T18:18:44.326013" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-04-18T18:18:44.326529" level="INFO">Releasing special key ENTER.</msg>
+<arg>//input[@class="MuiInputBase-input css-mnn31"]</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-04-18T18:18:43.627070" elapsed="0.930552"/>
+</kw>
+<kw name="Ele" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:44.562180" level="INFO">Clicking element 'xpath=(//td[@class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q34dxg"])[1]'.</msg>
+<arg>locator=${ele}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:44.560176" elapsed="0.477952"/>
+</kw>
+<arg>xpath=(//td[@class="MuiTableCell-root MuiTableCell-body MuiTableCell-sizeMedium css-q34dxg"])[1]</arg>
+<status status="PASS" start="2024-04-18T18:18:44.559178" elapsed="0.478950"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:30.134037" elapsed="14.904091"/>
+</kw>
+<kw name="DynamicLink" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:45.039133" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[1]/div/div[2]/ul/div[2]'.</msg>
+<arg>locator=${dinamic}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:45.039133" elapsed="0.464368"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>${WebElement}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-04-18T18:18:45.504611" elapsed="0.448034"/>
+</kw>
+<arg>xpath=//*[@id="root"]/div/div[1]/div/div[2]/ul/div[2]</arg>
+<arg>xpath=//*[@id="root"]/div/div[1]/div/div[2]/ul/div[3]/div/div/div/a[4]</arg>
+<status status="PASS" start="2024-04-18T18:18:45.038128" elapsed="0.915523"/>
+</kw>
+<kw name="Ele" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:45.957180" level="INFO">Clicking element 'xpath=//*[@id="root"]/div/div[1]/div/div[2]/ul/div[3]/div/div/div/a[4]'.</msg>
+<arg>locator=${ele}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:45.956162" elapsed="0.462092"/>
+</kw>
+<arg>xpath=//*[@id="root"]/div/div[1]/div/div[2]/ul/div[3]/div/div/div/a[4]</arg>
+<status status="PASS" start="2024-04-18T18:18:45.954648" elapsed="0.463606"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:30.133076" elapsed="16.285178"/>
+</kw>
+<kw name="Delete">
+<kw name="Ele" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:46.421659" level="INFO">Clicking element 'xpath=//*[@id="main-content"]/div/div[2]/div/table/tbody/tr[7]/td[7]'.</msg>
+<arg>locator=${ele}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:46.420658" elapsed="0.492595"/>
+</kw>
+<arg>xpath=//*[@id="main-content"]/div/div[2]/div/table/tbody/tr[7]/td[7]</arg>
+<status status="PASS" start="2024-04-18T18:18:46.419660" elapsed="0.495008"/>
+</kw>
+<kw name="Ele" owner="keyworld">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-04-18T18:18:46.921318" level="INFO">Clicking element 'xpath=/html/body/div[2]/div[3]/div/div[2]/button[1]'.</msg>
+<arg>locator=${ele}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-04-18T18:18:46.919315" elapsed="0.488524"/>
+</kw>
+<arg>xpath=/html/body/div[2]/div[3]/div/div[2]/button[1]</arg>
+<status status="PASS" start="2024-04-18T18:18:46.916196" elapsed="0.492601"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:46.419660" elapsed="0.989137"/>
+</kw>
+<status status="PASS" start="2024-04-18T18:18:30.132079" elapsed="17.277761"/>
+</test>
+<status status="PASS" start="2024-04-18T18:18:30.034244" elapsed="17.380583"/>
+</suite>
+<status status="PASS" start="2024-04-18T18:18:30.031241" elapsed="17.390210"/>
+</suite>
+<status status="PASS" start="2024-04-18T18:18:30.029236" elapsed="17.397749"/>
+</suite>
+<status status="PASS" start="2024-04-18T18:18:30.013184" elapsed="17.416296"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="123">123</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1" name="Place">123.Place</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1" name="Access Point Management">123.Place.Access Point Management</stat>
+<stat pass="1" fail="0" skip="0" id="s1-s1-s1-s1" name="Services">123.Place.Access Point Management.Services</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
